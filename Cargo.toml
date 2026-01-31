@@ -4,4 +4,14 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-slint = "1.14.1"
+slint = { version = "1.14.1", default-features = false, features = ["std", "backend-winit", "renderer-winit-skia", "accessibility", "compat-1-2"] }
+
+[build-dependencies]
+slint-build = "1.14.1"
+
+[profile.release]
+opt-level = 3          # Maximum optimizations (default for release)
+lto = "fat"            # Full Link Time Optimization (cross-crate optimization)
+codegen-units = 1      # Compile all code as a single unit (slower build, faster binary)
+debug = 0              # No debug info at all
+strip = true           # Automatically strips symbols from the binary

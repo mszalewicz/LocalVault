@@ -1,0 +1,253 @@
+import { ListView, VerticalBox, HorizontalBox } from "std-widgets.slint";
+export component MainWindow inherits Window {
+    // width: 150px;
+    // height: 150px;
+
+    // min-height:
+    preferred-width: 600px;
+    preferred-height: 900px;
+
+    background: green;
+    max-width: 850px;
+
+    // Optional: Set a floor so it doesn't get too small
+        // min-width: 400px;
+        // min-height: 300px;
+
+    VerticalBox {
+        ListView {
+
+            for data in [
+                { text: "Blue", color: #0000ff, bg: #eeeeee },
+                { text: "Red", color: #ff0000, bg: #eeeeee },
+                { text: "Green", color: #00ff00, bg: #eeeeee },
+                { text: "Yellow", color: #ffff00, bg: #222222 },
+                { text: "Black", color: #000000, bg: #eeeeee },
+                { text: "White", color: #ffffff, bg: #222222 },
+                { text: "Magenta", color: #ff00ff, bg: #eeeeee },
+                { text: "Cyan", color: #00ffff, bg: #222222 },
+                { text: "Blue", color: #0000ff, bg: #eeeeee },
+                { text: "Red", color: #ff0000, bg: #eeeeee },
+                { text: "Green", color: #00ff00, bg: #eeeeee },
+                { text: "Yellow", color: #ffff00, bg: #222222 },
+                { text: "Black", color: #000000, bg: #eeeeee },
+                { text: "White", color: #ffffff, bg: #222222 },
+                { text: "Magenta", color: #ff00ff, bg: #eeeeee },
+                { text: "Cyan", color: #00ffff, bg: #222222 },
+                { text: "Blue", color: #0000ff, bg: #eeeeee },
+                { text: "Red", color: #ff0000, bg: #eeeeee },
+                { text: "Green", color: #00ff00, bg: #eeeeee },
+                { text: "Yellow", color: #ffff00, bg: #222222 },
+                { text: "Black", color: #000000, bg: #eeeeee },
+                { text: "White", color: #ffffff, bg: #222222 },
+                { text: "Magenta", color: #ff00ff, bg: #eeeeee },
+                { text: "Cyan", color: #00ffff, bg: #222222 },
+                { text: "Blue", color: #0000ff, bg: #eeeeee },
+                { text: "Red", color: #ff0000, bg: #eeeeee },
+                { text: "Green", color: #00ff00, bg: #eeeeee },
+                { text: "Yellow", color: #ffff00, bg: #222222 },
+                { text: "Black", color: #000000, bg: #eeeeee },
+                { text: "White", color: #ffffff, bg: #222222 },
+                { text: "Magenta", color: #ff00ff, bg: #eeeeee },
+                { text: "Cyan", color: #00ffff, bg: #222222 },
+                { text: "Blue", color: #0000ff, bg: #eeeeee },
+                { text: "Red", color: #ff0000, bg: #eeeeee },
+                { text: "Green", color: #00ff00, bg: #eeeeee },
+                { text: "Yellow", color: #ffff00, bg: #222222 },
+                { text: "Black", color: #000000, bg: #eeeeee },
+                { text: "White", color: #ffffff, bg: #222222 },
+                { text: "Magenta", color: #ff00ff, bg: #eeeeee },
+                { text: "Cyan", color: #00ffff, bg: #222222 },
+                { text: "Blue", color: #0000ff, bg: #eeeeee },
+                { text: "Red", color: #ff0000, bg: #eeeeee },
+                { text: "Green", color: #00ff00, bg: #eeeeee },
+                { text: "Yellow", color: #ffff00, bg: #222222 },
+                { text: "Black", color: #000000, bg: #eeeeee },
+                { text: "White", color: #ffffff, bg: #222222 },
+                { text: "Magenta", color: #ff00ff, bg: #eeeeee },
+                { text: "Cyan", color: #00ffff, bg: #222222 },
+                { text: "Blue", color: #0000ff, bg: #eeeeee },
+                { text: "Red", color: #ff0000, bg: #eeeeee },
+                { text: "Green", color: #00ff00, bg: #eeeeee },
+                { text: "Yellow", color: #ffff00, bg: #222222 },
+                { text: "Black", color: #000000, bg: #eeeeee },
+                { text: "White", color: #ffffff, bg: #222222 },
+                { text: "Magenta", color: #ff00ff, bg: #eeeeee },
+                { text: "Cyan", color: #00ffff, bg: #222222 },
+                { text: "Blue", color: #0000ff, bg: #eeeeee },
+                { text: "Red", color: #ff0000, bg: #eeeeee },
+                { text: "Green", color: #00ff00, bg: #eeeeee },
+                { text: "Yellow", color: #ffff00, bg: #222222 },
+                { text: "Black", color: #000000, bg: #eeeeee },
+                { text: "White", color: #ffffff, bg: #222222 },
+                { text: "Magenta", color: #ff00ff, bg: #eeeeee },
+                { text: "Cyan", color: #00ffff, bg: #222222 },
+                { text: "Blue", color: #0000ff, bg: #eeeeee },
+                { text: "Red", color: #ff0000, bg: #eeeeee },
+                { text: "Green", color: #00ff00, bg: #eeeeee },
+                { text: "Yellow", color: #ffff00, bg: #222222 },
+                { text: "Black", color: #000000, bg: #eeeeee },
+                { text: "White", color: #ffffff, bg: #222222 },
+                { text: "Magenta", color: #ff00ff, bg: #eeeeee },
+                { text: "Cyan", color: #00ffff, bg: #222222 },
+                { text: "Blue", color: #0000ff, bg: #eeeeee },
+                { text: "Red", color: #ff0000, bg: #eeeeee },
+                { text: "Green", color: #00ff00, bg: #eeeeee },
+                { text: "Yellow", color: #ffff00, bg: #222222 },
+                { text: "Black", color: #000000, bg: #eeeeee },
+                { text: "White", color: #ffffff, bg: #222222 },
+                { text: "Magenta", color: #ff00ff, bg: #eeeeee },
+                { text: "Cyan", color: #00ffff, bg: #222222 },
+                { text: "Blue", color: #0000ff, bg: #eeeeee },
+                { text: "Red", color: #ff0000, bg: #eeeeee },
+                { text: "Green", color: #00ff00, bg: #eeeeee },
+                { text: "Yellow", color: #ffff00, bg: #222222 },
+                { text: "Black", color: #000000, bg: #eeeeee },
+                { text: "White", color: #ffffff, bg: #222222 },
+                { text: "Magenta", color: #ff00ff, bg: #eeeeee },
+                { text: "Cyan", color: #00ffff, bg: #222222 },
+                { text: "Blue", color: #0000ff, bg: #eeeeee },
+                { text: "Red", color: #ff0000, bg: #eeeeee },
+                { text: "Green", color: #00ff00, bg: #eeeeee },
+                { text: "Yellow", color: #ffff00, bg: #222222 },
+                { text: "Black", color: #000000, bg: #eeeeee },
+                { text: "White", color: #ffffff, bg: #222222 },
+                { text: "Magenta", color: #ff00ff, bg: #eeeeee },
+                { text: "Cyan", color: #00ffff, bg: #222222 },
+            ]: HorizontalBox {
+                padding: 10px;
+                Rectangle {
+                    border-radius: 10px;
+                    height: 80px;
+                    background: data.bg;
+                    width: parent.width - 35px;
+                    VerticalLayout {
+                        padding: 16px;
+                        alignment: center;
+                        Text {
+                            x: 0;
+                            font-size: parent.height - 30px;
+                            text: data.text;
+                            color: data.color;
+                        }
+                    }
+                }
+            }
+        }
+
+        Rectangle {
+            height: 40px;
+            background: grey;
+            border-radius: 10px;
+        }
+    }
+}
+
+// export component MainWindow inherits Window {
+//     Text {
+//         text: "testing sling capabilities";
+//         font-size: 40px;
+//         color: red;
+//     }
+// }
+
+// export component Test {
+//     property <int> count: 0;
+
+//     Rectangle {
+//         border-radius: 20px;
+
+//         // preferred-width: root.width - 20px;
+//         preferred-width: 100%;
+//         preferred-height: 100%;
+//         // width: root.width - 20px;
+//         // height: root.height - 20px;
+
+//         background: #f5c84e;
+
+//         drop-shadow-color: gray;
+
+//         drop-shadow-offset-x: 2px;
+//         drop-shadow-offset-y: 2px;
+//         drop-shadow-blur: 3px;
+
+//         Text {
+//             text: count;
+//             font-size: 40px;
+//             font-family: "Verdana";
+//         }
+
+//         TouchArea {
+//             clicked => {
+//                 count += 1;
+//             }
+//         }
+//     }
+// }
+
+// export component MyApp {
+
+//     in property <length> pad: 20px;
+//     in property <length> space: pad;
+
+//     min-width: 100px;
+//     max-width: 1000px;
+
+//     min-height: 100px;
+//     max-height: 1000px;
+
+//     preferred-width: 100%;
+//     preferred-height: 100%;
+
+//     VerticalLayout {
+//         padding: pad/2;
+//         spacing: space/2;
+//         HorizontalLayout {
+//             padding: pad;
+//             spacing: space;
+//             Test { }
+
+//             Test { }
+//         }
+
+//         HorizontalLayout {
+//             padding: pad;
+//             spacing: space;
+//             Test { }
+
+//             Test { }
+//         }
+//     }
+// }
+
+// export component MyComponent {
+//     width: 400px;
+//     height: 400px;
+
+//     Rectangle {
+//         background: #151515;
+//     }
+
+//     ta := TouchArea { }
+
+//     myRect := Rectangle {
+//         x: ta.mouse-x;
+//         y: ta.mouse-y;
+//         width: 100px;
+//         height: 100px;
+//         background: ta.pressed ? orange : skyblue;
+//         Text {
+//             x: 15px;
+//             y: 15px;
+//             text: "x: " + myRect.x / 1px;
+//             color: white;
+//         }
+
+//         Text {
+//             x: 15px;
+//             y: 35px;
+//             text: "y: " + myRect.y / 1px;
+//             color: white;
+//         }
+//     }
+// }
